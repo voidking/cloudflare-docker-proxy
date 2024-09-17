@@ -7,7 +7,7 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "cloudflare-docker-proxy.voidking-account.workers.dev": "https://registry-1.docker.io",
+  "cloudflare-docker-proxy.voidking-account.workers.dev/": "https://registry-1.docker.io",
   "docker.betterhao.xyz": dockerHub,
   "quay.betterhao.xyz": "https://quay.io",
   "gcr.betterhao.xyz": "https://gcr.io",
