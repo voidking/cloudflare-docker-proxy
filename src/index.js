@@ -7,17 +7,18 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.voidking.com": dockerHub,
-  "quay.voidking.com": "https://quay.io",
-  "gcr.voidking.com": "https://gcr.io",
-  "k8s-gcr.voidking.com": "https://k8s.gcr.io",
-  "k8s.voidking.com": "https://registry.k8s.io",
-  "ghcr.voidking.com": "https://ghcr.io",
-  "cloudsmith.voidking.com": "https://docker.cloudsmith.io",
-  "ecr.voidking.com": "https://public.ecr.aws",
+  "cloudflare-docker-proxy.voidking-account.workers.dev": "https://registry-1.docker.io",
+  "docker.betterhao.xyz": dockerHub,
+  "quay.betterhao.xyz": "https://quay.io",
+  "gcr.betterhao.xyz": "https://gcr.io",
+  "k8s-gcr.betterhao.xyz": "https://k8s.gcr.io",
+  "k8s.betterhao.xyz": "https://registry.k8s.io",
+  "ghcr.betterhao.xyz": "https://ghcr.io",
+  "cloudsmith.betterhao.xyz": "https://docker.cloudsmith.io",
+  "ecr.betterhao.xyz": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.voidking.com": dockerHub,
+  "docker-staging.betterhao.xyz": dockerHub,
 };
 
 function routeByHosts(host) {

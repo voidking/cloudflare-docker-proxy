@@ -1,6 +1,6 @@
 # cloudflare-docker-proxy
 
-![deploy](https://github.com/ciiiii/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
+![deploy](https://github.com/voidking/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/voidking/cloudflare-docker-proxy)
 
@@ -24,17 +24,17 @@
    ```
 2. use custom domain: support proxy multiple registries route by host
    - host your domain DNS on cloudflare
-   - add `A` record of xxx.voidking.com to `192.0.2.1`
+   - add `A` record of xxx.betterhao.xyz to `192.0.2.1`
    - deploy this project to cloudflare workers
-   - add `xxx.voidking.com/*` to HTTP routes of workers
+   - add `xxx.betterhao.xyz/*` to HTTP routes of workers
    - add more records and modify the config as you need
    ```javascript
    const routes = {
-     "docker.voidking.com": "https://registry-1.docker.io",
-     "quay.voidking.com": "https://quay.io",
-     "gcr.voidking.com": "https://k8s.gcr.io",
-     "k8s-gcr.voidking.com": "https://k8s.gcr.io",
-     "ghcr.voidking.com": "https://ghcr.io",
+     "docker.betterhao.xyz": "https://registry-1.docker.io",
+     "quay.betterhao.xyz": "https://quay.io",
+     "gcr.betterhao.xyz": "https://k8s.gcr.io",
+     "k8s-gcr.betterhao.xyz": "https://k8s.gcr.io",
+     "ghcr.betterhao.xyz": "https://ghcr.io",
    };
    ```
 
